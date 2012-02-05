@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Domain">
+  <logicalClassDesignerModelMoniker Id="cafa26c7-80e8-4095-90c0-3e02064691b0" />
+  <nestedChildShapes>
+    <packageShape Id="9bdce600-55e9-4b31-87a0-d8573977a4b0" absoluteBounds="1.375, 2.125, 2.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="c7c3b20f-9cc8-44a9-a2d0-355a4ae521ba" LastKnownName="Domain.Entities" />
+    </packageShape>
+    <packageShape Id="fb8b61bd-a765-4c2c-8be1-c2f5495ba278" absoluteBounds="4.875, 2.125, 2.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="8ddbc353-8c01-42d8-99fb-b8da64163f3d" LastKnownName="Domain.Abstractions" />
+    </packageShape>
+    <dependencyConnector edgePoints="[(3.875 : 2.625); (4.875 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="c3cf6dbd-e752-452f-9a8c-0e565b5b9307" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="9bdce600-55e9-4b31-87a0-d8573977a4b0" />
+        <packageShapeMoniker Id="fb8b61bd-a765-4c2c-8be1-c2f5495ba278" />
+      </nodes>
+    </dependencyConnector>
+    <packageShape Id="73632fc8-2bd5-4168-881e-0593050ad65d" absoluteBounds="1.75, 4, 2.125, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="f373f530-e77f-489b-affd-4bc572ec84a4" LastKnownName="MvcCodeFirst" />
+    </packageShape>
+    <dependencyConnector edgePoints="[(2.8125 : 4); (2.8125 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="554e9fff-c952-4a98-95dc-3fbd166e3910" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="73632fc8-2bd5-4168-881e-0593050ad65d" />
+        <packageShapeMoniker Id="9bdce600-55e9-4b31-87a0-d8573977a4b0" />
+      </nodes>
+    </dependencyConnector>
+    <packageShape Id="48fdfa8e-3d6c-48cb-8cc3-a2350d0e02b4" absoluteBounds="2.5, 0.5, 3.375, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="1afb4a51-6c50-4f46-942f-3b55929102d1" LastKnownName="Infrastructure.Repositories" />
+    </packageShape>
+    <dependencyConnector edgePoints="[(3.1875 : 1.5); (3.1875 : 2.39300346374512)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="27e95f08-865f-4215-8c56-37f2ee13dc3b" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="48fdfa8e-3d6c-48cb-8cc3-a2350d0e02b4" />
+        <packageShapeMoniker Id="9bdce600-55e9-4b31-87a0-d8573977a4b0" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

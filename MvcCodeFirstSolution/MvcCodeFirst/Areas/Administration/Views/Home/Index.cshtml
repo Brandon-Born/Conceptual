@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Domain.Entities.Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+<ul>
+    @foreach (var category in Model)
+    { 
+        <li>@Html.ActionLink(@category.Name, "Edit", "Category", new { id = @category.Id}, null)</li>
+    }
+</ul>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>

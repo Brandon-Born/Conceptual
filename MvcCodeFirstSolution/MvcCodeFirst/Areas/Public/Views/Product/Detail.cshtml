@@ -1,0 +1,18 @@
+﻿@model Domain.Entities.Product
+@{
+    ViewBag.Title = "Details";
+}
+<h2>
+    Product Details
+</h2>
+@Model.Name<br />
+$@Model.Price.RetailPrice<br />
+<br />
+@RenderProductImage(@Model.ImagePath)
+
+
+@helper RenderProductImage(string path)
+{
+    var imagePath = string.IsNullOrEmpty(path) ? "/Content/Images/PlaceHolder.gif" : path;
+    <img src="@(imagePath)" alt="" style="border: 1px solid #666" />
+}

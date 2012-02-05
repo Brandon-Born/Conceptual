@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7b9f78c7-7cc8-4f15-8fd2-903f41ccadda" name="Architecture" linkedPackageId="82e3de16-8197-41ec-a275-c9c323325856" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3fda45d4-01b8-44e1-af48-3d87e0cd80e6">
+      <profileInstance Id="486d2a5a-6133-454a-8edb-fa144367518b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="068d002b-f916-42d9-b379-e90f1135e3f9">
+      <profileInstance Id="aa66a326-1bcd-40de-93e4-7b570b0a4f92" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ec8495dd-b104-4112-9545-f4d4387d6cfa" name="Common.Linq">
+        <elementDefinition Id="4b83fcba-90d5-459b-aeee-bb3c34e2e21f" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="8c57ce8d-0a41-45f8-b479-96d6dfef5aa0" name="Infrastructure">
+        <elementDefinition Id="d6fa3b83-8c46-4250-b9ca-dba44628f195" />
+        <suppliersInternal>
+          <dependency Id="e4da1a19-fa78-414d-a954-e18e294ea4ad">
+            <packageMoniker Id="ec8495dd-b104-4112-9545-f4d4387d6cfa" LastKnownName="Common.Linq" />
+            <elementDefinition Id="54476212-55ec-4065-ad67-0627bedf4893" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="e950ba13-9849-43b9-95ae-dcc8011168ca" name="MvcCodeFirst">
+        <elementDefinition Id="5fa9bef0-eee5-435b-9c3d-d9112495d241" />
+        <suppliersInternal>
+          <dependency Id="a7c18f3d-a1de-4162-8e45-40477f49b025">
+            <packageMoniker Id="ec8495dd-b104-4112-9545-f4d4387d6cfa" LastKnownName="Common.Linq" />
+            <elementDefinition Id="0a2f06f6-310d-4d39-9542-9dbb25efa1fa" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="82e3de16-8197-41ec-a275-c9c323325856" name="Architecture">
+    <elementDefinition Id="b9310dbe-d916-48c3-8b5f-a1384f9dcbe7" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,26 @@
+﻿@model Domain.Entities.Category
+@{
+    ViewBag.Title = "Browse";
+}
+<h3>@Model.Name</h3>
+<table style="border: 1px solid #666; border-collapse: collapse; width: 600px" border="1px">
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+    @foreach (var product in Model.Products)
+    {
+        <tr>
+            <td>
+                @product.Name
+            </td>
+            <td>
+                @product.Price.RetailPrice
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", "Product", new { id = @product.Id }, null)
+            </td>
+        </tr>
+    }
+</table>

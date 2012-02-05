@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Domain.Entities.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table>
+<thead>
+    <tr>
+        <th>Category</th>
+        <th>Product</th>
+    </tr>
+</thead>
+@foreach (var product in Model)
+{
+     <tr>
+        <td>@product.Category.Name</td>
+        <td>@Html.ActionLink(@product.Name, "Detail", new { id = @product.Id })</td>
+     </tr>
+}
+</table>

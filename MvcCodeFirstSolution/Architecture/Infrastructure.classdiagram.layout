@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Architecture">
+  <logicalClassDesignerModelMoniker Id="7b9f78c7-7cc8-4f15-8fd2-903f41ccadda" />
+  <nestedChildShapes>
+    <packageShape Id="8d0a4493-93dd-4681-94ca-92ef10e55003" absoluteBounds="1.75, 1, 1.75, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="ec8495dd-b104-4112-9545-f4d4387d6cfa" LastKnownName="Common.Linq" />
+    </packageShape>
+    <packageShape Id="41a7723c-5d55-430e-908f-b02c136310fb" absoluteBounds="5.625, 1.125, 2.125, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="8c57ce8d-0a41-45f8-b479-96d6dfef5aa0" LastKnownName="Infrastructure" />
+    </packageShape>
+    <dependencyConnector edgePoints="[(5.625 : 1.5625); (3.5 : 1.5625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="e4da1a19-fa78-414d-a954-e18e294ea4ad" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="41a7723c-5d55-430e-908f-b02c136310fb" />
+        <packageShapeMoniker Id="8d0a4493-93dd-4681-94ca-92ef10e55003" />
+      </nodes>
+    </dependencyConnector>
+    <packageShape Id="e602fb29-fb6c-4efb-9b61-a53ad650c6da" absoluteBounds="1.875, 3.25, 1.875, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="e950ba13-9849-43b9-95ae-dcc8011168ca" LastKnownName="MvcCodeFirst" />
+    </packageShape>
+    <dependencyConnector edgePoints="[(2.6875 : 3.25); (2.6875 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="a7c18f3d-a1de-4162-8e45-40477f49b025" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="e602fb29-fb6c-4efb-9b61-a53ad650c6da" />
+        <packageShapeMoniker Id="8d0a4493-93dd-4681-94ca-92ef10e55003" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

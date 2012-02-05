@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="cafa26c7-80e8-4095-90c0-3e02064691b0" name="Domain" linkedPackageId="5d6cdf32-8b76-4828-b416-1e393b14c636" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="aaeee077-4858-4199-bd33-6e25bbc82ebf">
+      <profileInstance Id="d7058cfa-0ce1-4ec2-9299-b8272bb6133c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="76146022-441a-444d-9656-87425f6a734d">
+      <profileInstance Id="1ce09283-e856-49e1-8ada-1884fb361f39" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="c7c3b20f-9cc8-44a9-a2d0-355a4ae521ba" name="Domain.Entities">
+        <elementDefinition Id="9edc34c8-75a1-4d86-b9e8-648972df0dde" />
+        <suppliersInternal>
+          <dependency Id="c3cf6dbd-e752-452f-9a8c-0e565b5b9307">
+            <packageMoniker Id="8ddbc353-8c01-42d8-99fb-b8da64163f3d" LastKnownName="Domain.Abstractions" />
+            <elementDefinition Id="ff6abe80-91ea-4382-abdd-c46fab68fdf7" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="8ddbc353-8c01-42d8-99fb-b8da64163f3d" name="Domain.Abstractions">
+        <elementDefinition Id="8eaf8714-e383-4162-8d29-4954c27013e8" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="f373f530-e77f-489b-affd-4bc572ec84a4" name="MvcCodeFirst">
+        <elementDefinition Id="b24b119d-4127-4f89-8e81-ed6c9b6b0c38" />
+        <suppliersInternal>
+          <dependency Id="554e9fff-c952-4a98-95dc-3fbd166e3910">
+            <packageMoniker Id="c7c3b20f-9cc8-44a9-a2d0-355a4ae521ba" LastKnownName="Domain.Entities" />
+            <elementDefinition Id="ed51fc42-243b-4cbf-9471-3793a5d5cde4" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="1afb4a51-6c50-4f46-942f-3b55929102d1" name="Infrastructure.Repositories">
+        <elementDefinition Id="00023c94-4a77-43e3-a685-e1241fb61180" />
+        <suppliersInternal>
+          <dependency Id="27e95f08-865f-4215-8c56-37f2ee13dc3b">
+            <packageMoniker Id="c7c3b20f-9cc8-44a9-a2d0-355a4ae521ba" LastKnownName="Domain.Entities" />
+            <elementDefinition Id="4fb36b93-4c13-49e6-bff1-aba1058e9650" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="5d6cdf32-8b76-4828-b416-1e393b14c636" name="Architecture">
+    <elementDefinition Id="b9310dbe-d916-48c3-8b5f-a1384f9dcbe7" />
+  </package>
+</logicalClassDesignerModel>
