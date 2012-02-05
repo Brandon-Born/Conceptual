@@ -27,7 +27,7 @@ namespace MvcCodeFirst
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional }, // Parameter defaults
                 new { controller = @"[^\.]*" }  // constrain to not accept any controllers with a period in the name. ie: fav.ico
-            );
+            ).DataTokens.Add("area", "Public");
         }
 
         protected void Application_Start()
@@ -40,7 +40,7 @@ namespace MvcCodeFirst
             ControllerBuilder.Current.SetControllerFactory(typeof(CompositionRootControllerFactory));
 
             // resolves class name conflicts for multiple HomeControllers
-            ControllerBuilder.Current.DefaultNamespaces.Add("MvcCodeFirst.Controllers");
+            ControllerBuilder.Current.DefaultNamespaces.Add("PublicArea.Controllers");
 
             //  for optimization purposes, only load the view engine needed since we do not use any other
             //  ref: http://blogs.msdn.com/b/marcinon/archive/2011/08/16/optimizing-mvc-view-lookup-performance.aspx
